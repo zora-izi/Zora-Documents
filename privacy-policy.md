@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last updated:** 20 June 2026
+**Last updated:** 24 November 2026
 
 **Blank Page Digital Ltd** (“we,” “us,” or “our”) operates the **Zora** mobile application (the “App”) on iOS and Android. This Privacy Policy explains how we collect, use, store, share, and protect personal data when you use Zora.
 
@@ -42,7 +42,7 @@ During setup you may provide:
 
 Depending on how you use Zora, we may process:
 
-- nutrition entries (manual logs, barcode lookups, text descriptions);
+- nutrition entries (manual logs, barcode lookups, text descriptions, and meals you describe by voice);
 - food photos you upload for automated nutrition estimates;
 - weight, water intake, fasting plans and sessions;
 - daily feel or similar subjective check-ins;
@@ -75,6 +75,22 @@ We may process:
 - app version, platform (iOS/Android), and server request timestamps;
 - IP address for security, rate limiting, and fraud prevention.
 
+### 1.7 Voice logging
+
+If you tap the microphone to describe a meal, Zora asks for **microphone** and **speech recognition** permission. Your speech is turned into text by your phone's speech service: **Apple** speech recognition on iOS, or **Google** speech services on Android. Depending on your device and settings, this may happen on the device or on Apple's or Google's servers, under their privacy policies.
+
+**We do not record, store, or receive your audio.** Zora only receives the resulting text, which is then handled like any meal you type (see 1.3 and 1.5).
+
+### 1.8 Food-logging problem reports
+
+To find and fix foods Zora gets wrong, the App sends us a short report when food logging goes wrong: no food was found, the automated estimate failed, you edited or deleted an estimated item, or you tapped **"This looks wrong"**.
+
+- **By default**, a report contains only technical details: the type of problem, where in the App it happened, a short technical message, the app version, and the platform (iOS or Android).
+- **Only if you turn on Settings → Help improve food recognition** (off by default), a report also includes what you typed or said, what Zora estimated (food names, grams, and calories), and what you changed it to. You can turn this off at any time; future reports then go back to technical details only.
+- Reports **never include your name, email, account ID, or device identifier**, and we do not store your IP address with them. Our server checks that a report comes from a signed-in copy of the App, but does not keep who sent it.
+
+Because reports are not linked to you, we cannot find or delete a particular person's reports. We keep them for **no longer than 12 months**, and delete them sooner once reviewed. Please do not type personal or medical details into food descriptions.
+
 ---
 
 ## 2. How we use your data
@@ -94,8 +110,8 @@ We use personal data to:
 Where UK or EEA law applies, we rely on:
 
 - **Contract** — to provide the App you signed up for;
-- **Consent** — where you grant health permissions or use optional AI features;
-- **Legitimate interests** — security, fraud prevention, and improving the service, balanced against your rights.
+- **Consent** — where you grant health, microphone, or speech recognition permissions, use optional AI features, or turn on Help improve food recognition;
+- **Legitimate interests** — security, fraud prevention, and improving the service (including technical problem reports, which do not identify you), balanced against your rights.
 
 Health-related data may be special category data under UK/EU law. We process it only where we have a valid legal basis (often your explicit consent through App permissions and use of health features).
 
@@ -111,14 +127,14 @@ We share data only as needed to run the App:
 
 | Recipient | Purpose |
 |-----------|---------|
-| **Apple** | Sign in with Apple, App Store purchases, HealthKit (if you enable it) |
-| **Google** | Sign in with Google, Play purchases, Health Connect (if you enable it), Gemini AI processing |
+| **Apple** | Sign in with Apple, App Store purchases, HealthKit (if you enable it), speech recognition for voice logging (iOS) |
+| **Google** | Sign in with Google, Play purchases, Health Connect (if you enable it), Gemini AI processing, speech recognition for voice logging (Android) |
 | **RevenueCat** | Subscription and entitlement status |
 | **Edamam** | Nutrition database lookup (via our backend) |
 | **USDA FoodData Central** | Generic food nutrition lookup (via our backend) |
 | **Open Food Facts** | Barcode product lookup (barcode number only; no account ID) |
 | **Railway** | Encrypted hosting of synced account data and API services |
-| **Resend** | Delivering support emails you send to us |
+| **Resend** | Delivering support emails you send to us, and internal alerts to our team about new problem reports (counts only, no personal data) |
 
 Each provider processes data under its own terms and privacy policy. We require service providers to protect data and use it only for our instructions, where contractually possible.
 
@@ -144,6 +160,8 @@ If your complimentary access period ends and you do not subscribe, the App may l
 You may delete your account in the App (**Settings → Delete account**) or at **https://zora-izi.github.io/Zora-Documents/delete-account**.
 
 Deletion removes your data from our active systems, including profile, nutrition, weight, water, fasting, daily feel, and related usage records.
+
+Food-logging problem reports (section 1.8) are not linked to your account, so they are not affected by deletion; they are removed automatically within 12 months.
 
 On your device, most local data is cleared. We may keep a non-personal installation identifier and basic display preferences (such as theme) so a future install can work.
 
